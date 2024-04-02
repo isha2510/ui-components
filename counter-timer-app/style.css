@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.timer{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+
+.actionButton{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #80808054;
+}
+
+.count{
+    margin: 15px;
+    font-size: larger;
+}
