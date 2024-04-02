@@ -99,3 +99,55 @@ header>button:hover {
 .selected {
     background-color: var(--btn);
 }
+
+/* Add Employee - START */
+.addEmployee {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--modal-bg);
+  }
+  .addEmployee_create {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 50px grey;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .addEmployee_create > div {
+    display: grid;
+    grid-template-columns: 48.1% 48.1%;
+    column-gap: 15px;
+  }
+  .addEmployee_create input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(236, 236, 236);
+  }
+  
+  /* removes arrows from input type='number' */
+  .addEmployee_create input::-webkit-outer-spin-button,
+  .addEmployee_create input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .addEmployee_create--submit {
+    padding: 10px !important;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--btn);
+    cursor: pointer;
+  }
+  .addEmployee_create--submit:hover {
+    background-color: var(--btn-hover);
+  }
+  /* Add Employee - END */
