@@ -1,0 +1,23 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    width: 30%;
+    justify-content: center;
+}
+.pagination > button{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pagenumber{
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    background: none;
+}
+
+button:disabled {
+    text-decoration: none;
+    color: gray;
+}
