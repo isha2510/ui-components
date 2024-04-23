@@ -1,0 +1,45 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.addTodo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+table {
+    width: 50vw;
+    border-collapse: collapse;
+    margin: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  .action>button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
