@@ -11,9 +11,9 @@ function App() {
       setData(resp?.products);
     });
   }, []);
-  let endIndex=currentPage*10;
-  let startIndex=endIndex-10;
-  let filteredData=data.slice(startIndex,endIndex);
+  // let endIndex=currentPage*10;
+  // let startIndex=endIndex-10;
+  // let filteredData=data.slice(startIndex,endIndex);
   const handleCurrentPageData = (crp) => {
     setCurrentPage(crp);
   }
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="container">
       <div className='products'>
-        {filteredData.map((val) => {
+        {data.slice(currentPage*10-10,currentPage*10).map((val) => {
           return (
             <div className='product' key={val.id}>
               <img src={val.thumbnail} alt={val.title} />
